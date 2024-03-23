@@ -1,0 +1,4 @@
+prometheus_client==0.11.0
+requests==2.26.0
+psycopg2-binary==2.9.1
+influxdb-client==1.24.0
