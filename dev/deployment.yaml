@@ -1,1 +1,19 @@
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: speedtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: speedtest
+  template:
+    metadata:
+      labels:
+        app: speedtest
+    spec:
+      containers:
+      - name: speedtest
+        image: 192.168.68.65:31532/speedtest-jw:1.0
+        ports:
+        - containerPort: 8000
