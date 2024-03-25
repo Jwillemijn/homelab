@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: speedtest
-        image: 192.168.68.65:31532/speedtest-jw:1.0
+        image: jwhomelab/speedtest-jw:1.1
         ports:
         - containerPort: 8000
